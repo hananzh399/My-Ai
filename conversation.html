@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Conversation</title>
+    <link rel="stylesheet" href="conversation.css">
+</head>
+<body>
+    <!-- New Animated Background -->
+    <div class="particle-bg">
+        <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+    </div>
+
+    <div id="conversation-container">
+        <a href="index.html" class="back-button">&larr; Back to Chat</a>
+
+        <div id="status-display">Press the core to begin</div>
+
+        <!-- This container is now visually hidden by the CSS -->
+        <div id="transcript-container">
+            <p id="user-transcript"></p>
+            <p id="ai-transcript"></p>
+        </div>
+
+        <div id="mic-button-container">
+            <button id="mic-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 1.75a3.25 3.25 0 00-3.25 3.25v7.5a3.25 3.25 0 006.5 0v-7.5A3.25 3.25 0 0012 1.75zM16.75 12.5a.75.75 0 01-1.5 0v-1.5a.75.75 0 011.5 0v1.5zM12 15.25a2.75 2.75 0 002.75-2.75v-1.5a.75.75 0 011.5 0v1.5a4.25 4.25 0 01-8.5 0v-1.5a.75.75 0 011.5 0v1.5A2.75 2.75 0 0012 15.25zM10.75 18.75a.75.75 0 000 1.5h2.5a.75.75 0 000-1.5h-2.5z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Re-using the handler to communicate with our backend -->
+    <script src="handler.js"></script>
+    <script src="mobile-helper.js"></script> <!-- ADDED THIS SCRIPT -->
+    <!-- This page has its own dedicated logic file -->
+    <script src="conversation.js"></script>
+</body>
+</html>

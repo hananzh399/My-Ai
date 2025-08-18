@@ -1,0 +1,9 @@
+const firebaseConfig = {
+  apiKey: "AIzaSyBkOZaNMaKTlVj27_1xF4Tg66phJwklhL4",
+  authDomain: "my-ai-98137.firebaseapp.com",
+  projectId: "my-ai-98137",
+  storageBucket: "my-ai-98137.firebasestorage.app",
+  messagingSenderId: "867036346580",
+  appId: "1:867036346580:web:e6312c9d83dfe752052341",
+  measurementId: "G-3WNWBNFZ5J"
+};
